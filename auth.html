@@ -1,0 +1,69 @@
+<!-- Doctype HTML -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 	<!-- мета тег для определения кодировки сайта -->
+<meta name="keywords" content="test, site, website" />					<!-- теги для поискового робота -->
+<meta name="description" content="Этот сайт является пробным сайтом" />	<!-- мета тег названия сайта -->
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" /> 				<!-- путь к стилям(это коммент) -->
+<link href="img/PI16.ICO" rel="shortcut icon" type="image/x-icon" />		<!--изображение иконки вкладки браузера -->
+<title>Тестовый сайт</title>												<!--название вкладки браузера -->
+
+
+</head>
+<body>
+	<div id="page-wrap">
+		<header>
+			<a href="index.html" title="На главную" id="logo">Test-Site</a>								<!-- ссылка с подсказкой title -->
+			<span class="contact"><a href="about.html" title="Информация о нас">О нас</a></span>
+			<input type="text" class="field" placeholder="Давай помогу найти"/>							<!--окно ввода-- данных  с предварительным заполнением окна ввода-->
+			
+			<span class="right">
+			<span class="contact"><a href="reg.html" title="Зарегистрироваться">Регистрация</a></span>
+			<span class="contact"><a href="auth.html" title="Войти">Вход</a></span>
+			</span>
+		</header>
+	
+		<div class="clear"><br /></div>
+		
+		<center>
+			<div id="menu">Разделы<hr /></div>
+			<div id="menuHrefs">
+				<a href="about.html">О нас</a>
+				<a href="feedback.html">Обратная связь</a>
+				<a href="auth.html">Вход</a>
+				<a href="reg.html">Регистрация</a>
+			</div>
+		</center>
+		
+		<div id="wrapper">
+			<div id="articles">
+				<form action="" method="post"> <!-- class="form" -->
+					<label for="subject">Тема</label>					
+					<input type="text" id="subject" name="subject" placeholder="тема"/>
+					<label for="mail">Email</label>
+					<input type="email" id="mail" name="mail" placeholder="address@example.com"/>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" placeholder="Имя"/>
+					<label for="message">Текст</label>
+					<textarea id="message" name="message" placeholder="Введи текст"></textarea>
+					<input type="submit" value="Отправить" id="send" name="send" />
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	
+		<footer>
+			<span class="left">Все права защищены &copy; 2015</span>
+			<span class="right">Социальные кнопки<img src="img/bing.ico"  alt="Группа в контакте" title="Группа в контакте"/></span>
+		</footer>
+
+
+
+
+</body>
+
+</html>

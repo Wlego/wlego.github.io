@@ -1,0 +1,565 @@
+@charset "UTF-8";
+
+* {												/*ко всему документу*/
+	margin: 0;			
+	padding: 0;
+	outline: none;								/*удаление обводки вокруг input в некоторых браузерах*/
+	
+}
+
+html {height:100%}
+
+
+body {
+	width: 100%;								/*ширина 100%*/
+	height: 100%;
+	/* color: #333; */
+	/* background: #f7f7f7; */
+	font-size: 1em;								/*изменение размера шрифта при изменение размера картинки */
+	font-family: "Segoe UI", sans-serif; 		/*шрифта Segoe UI, если нет то sans-serif*/
+	line-height: 135%;						
+}
+
+a {												/*настройки ссылки*/
+	color: #f48b8b;
+	text-decoration: none;						/* все ссылки без подчеркивания */
+	transition: all.6s ease;					/* плавное изменение цвета */
+	-moz-transition: all.6s ease;				/* плавное изменение цвета в мозиле*/
+	-webkit-transition: all.6s ease;			/* плавное изменение цвета в сафари*/
+	-ms-transition: all.6s ease;				/* плавное изменение цвета в мс*/
+}
+
+a:hover {										/*настройки ссылки при наведении на ссылку*/
+	color: #8b9ff5;
+	text-decoration: none;
+	transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+a:active {
+	color: #8CE4A6;							/* действия при нажатии на сслыку*/
+	
+}
+
+img {
+	max-width: 100%;					/*ширина картинки*/
+	height: auto;						/*автоматический подбор высоты при изменение блока*/
+	width: auto\9;						/*для корректного сжатия изображения internet explorer 9*/
+	
+}
+
+hr {display:block;
+	border:0px;
+	/* height:10px; */
+	border-top: 2px solid blue;
+	/* padding:0%; */
+}
+
+.left { float:left;}					/*слева на странце*/
+
+.right { float:right;}					/*справа на странце*/
+	
+.clear{clear:both}						/* убирает огибание текстом float */
+
+::selection {background: #f58b8b; color:#fff}			/*выделение*/
+::-moz-selection {background: #f58b8b; color:#fff}		/*выделение для всех брузеров*/
+
+/* БЛОК ДЛЯ ВЫДЕЛЕНИЯ  */
+
+::selection {
+    color: #fff; /* Цвет текста */
+    background: #f58b8b; /* Цвет фона */
+   }             
+::-moz-selection{
+    color: #fff; 	/* Цвет текста */
+    background: #f58b8b; /* Цвет фона */
+   }
+
+header, footer {
+	width: 98%;											/*заполнение экрана*/
+	background-color: #fff;	
+	float:left:
+/*	min-height: 50px;									/*минимальная высота*/
+}
+
+.header_top{
+	border-radius: 5px;
+	box-shadow: inset 0px 0px 20px 0.15px #80591e;
+}
+
+
+header .menu .nav li a{
+	font-size: 1.4em;
+	color: #696763;
+}
+
+header {
+	padding: 1%;									/*+1% справа и слева страницы*/
+}
+
+
+
+#logo {												/*id*/
+	font-size: 2em;									/*автоподгонка размера шрифта*/
+	font-family: Comic Sans MS, sans-serif;
+	color: #696763;
+}
+
+.contact { 											/*class*/
+	font-size: 1.5em;
+	font-family: Comic Sans MS, sans-serif;
+	margin-left:20px;
+	
+}
+
+input[type=text].field {
+	border-radius: 5px;					/*скругление краев*/
+	border: 2px solid-silver;			/*толщина границы*/
+	padding:1px;						/*отступ внутри объекта*/
+	margin-left:20px;					/*отступ слева от объекта*/
+	margin-bottom: 10px;
+}
+
+.find{
+	border-radius: 5px;					/*скругление краев*/
+	border: 2px solid-silver;			/*толщина границы*/
+	padding:1px;						/*отступ внутри объекта*/
+	margin-left:20px;					/*отступ слева от объекта*/
+	margin-bottom: 10px;
+}
+
+
+input[type=text].field:focus {
+	border:2px solid #f58b8b;
+}
+
+article img{
+	width:50%;
+	height:50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+
+#menu {
+	color: #666;
+	font-family: Comic Sans MS, sans-serif;
+	font-size: 1.7em;
+}
+
+#menu hr{
+	width: 600px;
+	max-width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#menuHrefs a{
+	
+	padding:5px;
+	float:right;	
+	margin-top:5px;
+	color: black;
+	background-color:lime;
+	border-right: 2px solid silver;
+	
+}
+
+/* #menuHrefs a:hover{
+	border: 4px outset blue;
+	background-color:green;
+	
+} */
+
+/* основные стили для сайта */
+
+#wrapper{
+	float:left;
+	width:100%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+#wrapper #articles{
+	float:left;
+	width:90%;
+	margin-left:5%;
+}
+
+#wrapper #articles article{
+	float:left;
+	border:1px solid silver;
+	box-sizing:border-box;
+	border-radius:5px;
+	background-color:#fafafa;
+	min-height:400px;
+}
+
+@media (min-width:900px){
+#wrapper #articles article{
+	width:31.33333%;
+	margin-right:2%;
+}}
+
+@media (max-width:899px) and (min-width: 700px){
+#wrapper #articles article{
+	width:60%;
+	margin-left:20%;
+	margin-bottom:10px;
+}}
+
+@media (max-width:699px){
+#wrapper #articles article{
+	width:60%;
+	margin-left:20%;
+	margin-bottom:10px;
+}}
+
+#wrapper #articles article img{
+	width:100%;
+	height:200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+
+#wrapper #articles article h2{
+	width:90%;
+	margin-left:5%;
+	font-weight: normal;
+	font-size:1.5em;
+	color: gray;
+}
+
+#wrapper #articles article p{
+	width:90%;
+	margin-left:5%;
+	margin-top:5px;
+	text-indent:0.5em;
+	font-size:0.79em;
+}
+
+#wrapper #articles article a{
+	padding:3px ;
+	/* background-color:inherit; */
+	margin:1%;
+	border-radius:4px;
+	float:right;
+	color:black;
+	font-size: 0.79em;
+}
+
+#wrapper #articles article a:hover{
+	/* background-color:inherit; */
+	color:cyan;
+}
+/* Форма */
+
+form{
+	width: 60%;
+	margin-left: 20%;
+	float:left;
+}
+
+form label{
+	float:left;
+	width:100%;
+	margin-bottom:10px;
+	
+}
+
+form input {
+	border-radius: 5px;					/*скругление краев*/
+	border: 2px solid-silver;			/*толщина границы*/
+	padding:5px;						/*отступ внутри объекта*/
+	float:left;
+	clear:both;
+	width:40%;
+	margin-bottom:10px;
+}
+
+form input:focus, form textarea:focus {
+	border:2px solid brown;
+}
+
+form textarea {
+	width:60%;
+	float:left;
+	clear:both;
+	border: 2px solid silver;
+	border-radius:5px;
+	/* margin: 100px 100px; */
+	padding: 2px;
+	/* text-align:left; */
+	font-size:1em;
+}
+
+
+form textarea::-webkit-input-placeholder { 
+	color: blue; 
+}
+
+form #send {
+	float:left;
+	min-width: 15%;
+	width: 15%;
+	padding:5px;
+	border-radius: 5px;
+	margin-top:5px;
+	font-size: 0.8em;
+	cursor:url(../img/1.jpg),default;
+}
+
+form #send:hover {
+	background-color: silver;
+}
+
+input[type=text].field:focus {
+	border:2px solid #f58b8b;
+}
+
+
+/* центральный блок */
+
+#main_soc_block{
+	width:100%;
+	min-height:15%;
+	padding:1%;
+	border-bottom:2px solid silver;
+	border-top:2px solid silver;
+	box-sizing:border-box;
+	margin: 20px 0%;
+	float:left;
+	background: url(../img/Penguins.jpg) ;
+	background-size:300px;
+	max-width:98%;
+}
+
+#main_soc_block_in a{
+	margin:0%;
+	border:0%; 
+	text-align:center;
+	padding:3px 5px 500px;
+	color:white;
+	font-size: 25px;
+	
+}	
+/* СТИЛИ ДЛЯ ФУТЕРА */
+
+/* .heigh {float:right;
+		margin: 0% 0px;
+		width: 100%;
+} */
+
+footer {
+	float:left;
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	padding: 1%;
+	padding-bottom:2%;					/*отступ внутри блока от основния*/
+}	
+
+footer  img{ 
+			width:10%;
+			float:left;
+			margin-right: 5px;
+}
+
+#page-wrap:after{
+	content: "";
+	display: block;
+}
+
+footer, #page-wrap:after {				/* футер и блок после хидера по 10px */
+	height: 10px
+}
+
+#page-wrap {							/* футер вниз */
+	min-height: 95%;					/* минимальная высота блока page-wrap */
+	margin-bottom: -10px;				/* -10px под футер */
+}
+
+.category-products {
+    border: 1px solid #F7F7F0;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}	
+
+
+
+.category-products .panel-default .panel-heading {
+    background-color: #FFFFFF;
+    border: 0 none;
+    color: #FFFFFF;
+    padding: 5px 20px;
+}
+
+.category-products .panel-default .panel-heading .panel-title a {
+    color: #696763;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cont {
+	 margin-top: 30px;
+}
+
+
+
+.svoi {
+	display: none;
+	margin: 0;
+	padding:0;
+}
+
+.slider{
+	padding: 0;
+	margin: 0;
+}
+
+.item{
+	padding: 20px 22px;
+	
+}
+
+.item img{
+	
+	box-shadow: 12px -10px 20px 0.15px;
+}
+
+
+ #compaunt{
+	 padding: 0 20px;
+ }
+
+ #compaunt img{
+	border-radius: 10px;
+	box-shadow: 12px -10px 20px 0.15px;
+	margin-right:20px;
+}
+
+
+
+.clndr{
+	margin-top: 18%;
+}
+
+.control-carousel{
+	top: 38%;
+}
+
+
+	.carousel-indicators{
+	bottom: 50px;
+}
+
+.modal-dialog{
+	width: 350px;
+	left:300px;
+	
+}
+
+.modal .modal-dialog .modal-content .modal-body{
+	height:120px;
+	margin-bottom:10px;
+	padding:5px;
+}
+
+.modal .modal-dialog .modal-content .modal-footer{
+	height:50px;
+	margin:8px;
+	padding:8px;
+}
+
+
+
+ /* #compaunt div{
+	border:solid 20px white;
+}  
+
+ #compaunt img{
+	position: relative;
+	width:auto;
+	height: auto;
+	
+}
+
+.slider{
+	width: 90%;
+	height: 107%;
+	margin: 100px auto;
+
+	position: relative;
+	top: 0;
+	left:0;
+	right:0;
+
+	padding-bottom: 10px;
+	border:solid 20px white;
+}
+
+.item{
+	text-align: center;
+ 	line-height:300px; 
+	position:relative;
+ 	font-size: 50px; 
+	color:#fff;
+	display:none;
+	
+}
+
+.item.active{
+	display:block;
+	position: relative;
+ 	bottom:0px;
+ 	border:solid 2px red; 
+}
+
+#compaunt .n{
+	color: #575757;
+}
+
+#compaunt a{
+	text-decoration:none;
+	color: red;
+	font-size: 20px;
+		
+}
+
+
+
+#compaunt a:hover{
+	color:#0AB6DD;
+}
+
+#compaunt .prev{
+	position: relative;
+	bottom:400px;
+	left:0%;
+	height: 20px;
+	width: 80px;
+}
+
+#compaunt .next{
+	position: relative;
+	bottom: 400px;
+	right: -90%;
+	height: 20px;
+	width: 80px;
+}
+
+#compaunt  p{
+	display:inline-block;
+	text-align: center;
+	position: relative;
+	bottom: 40px;
+	font-size: 20px;
+	color: white;
+	width:400px;
+	height: 20px;
+} */

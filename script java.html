@@ -1,0 +1,105 @@
+<!-- Doctype HTML -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 	<!-- мета тег для определения кодировки сайта -->
+<meta name="keywords" content="test, site, website" />					<!-- теги для поискового робота -->
+<meta name="description" content="Этот сайт является пробным сайтом" />	<!-- мета тег названия сайта -->
+
+
+<script src="js/script.js"></script>
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" /> 				<!-- путь к стилям(это коммент) -->
+<link href="css/style-scripts.css" rel="stylesheet" type="text/css" /> 				<!-- путь к стилям(это коммент) -->
+<link href="img/PI16.ICO" rel="shortcut icon" type="image/x-icon" />		<!--изображение иконки вкладки браузера -->
+<title>Тестовый сайт</title>												<!--название вкладки браузера -->
+
+
+</head>
+<body><!-- onload="time()" -->
+<!-- <script src="js/script.js"></script> -->
+	<div id="page-wrap_script">
+		<header>
+			<a href="index.html" title="На главную" id="logo">Test-Site</a>								<!-- ссылка с подсказкой title -->
+			<span class="contact"><a href="about.html" title="Информация о нас">О нас</a></span>
+			<input type="text" class="field" placeholder="Давай помогу найти"/>							<!-- окно ввода-- данных  с предварительным заполнением окна ввода -->
+			
+			<span class="right">
+			<span class="contact"><a href="reg.html" title="Зарегистрироваться">Регистрация</a></span>
+			<span class="contact"><a href="auth.html" title="Войти">Вход</a></span>
+			</span>
+		</header>
+	
+		<div class="clear"><br /></div>
+		
+		<center>
+			<div id="menu">Разделы<hr /></div>
+			<div id="menuHrefs">
+				<a href="about.html">О нас</a>
+				<a href="feedback.html">Обратная связь</a>
+				<a href="auth.html">Вход</a>
+				<a href="reg.html">Регистрация</a>
+			</div>
+		</center>
+		
+		<div id="wrapper">
+			<!-- <center> -->
+			<div id="articles_script">
+				<article>
+					<img src="img/Jellyfish.jpg" alt="изображение" title="изображение" />
+					<h2>Это инженерный калькулятор</h2>
+					<p id="pip"></p>
+					<a href="index.html" title="статья">обратно</a>					
+					<input id="pole" onclick="time()" type="text" class="field" placeholder="введи выражение" />
+					<button id="result"onclick="calcu()">=</button>
+					<br>
+					<input id="pole1" type="text" class="field" placeholder="результат" /><br/>
+					<div id="button">
+						<div id="button1">
+						<button id="sin" onclick="calcu_sin()">sin()</button><br>
+						<button id="sin" onclick="calcu_sin()">asin()</button>
+						</div>
+						<div id="button1">
+						<button id="sin" onclick="calcu_sin()">cos()</button><br>
+						<button id="sin" onclick="calcu_sin()">acos()</button>
+						</div>
+						<div id="button1">
+						<button id="sin" onclick="calcu_sin()">tan()</button><br>
+						<button id="sin" onclick="calcu_sin()">atan()</button>
+						</div>
+						<div id="button1">
+						<button id="sin" onclick="calcu_sin()">ctan()</button><br>
+						<button id="sin" onclick="calcu_sin()">actan()</button>
+						</div>
+					</div>
+				</article>
+				
+			</div>
+			<!-- </center> -->
+			
+			<div class="clear"><br /></div>
+			
+			<div id="main_soc_block">
+				<center>
+				<div id="main_soc_block_in">
+					<a href="reg.html" class="main_soc_block_in" title="регистрируйтесь">Регся быстрей</a>
+					<!-- <a href="reg.html" title="регистрируйтесь">Регся быстрей</a> -->
+				</div>
+				</center>
+			</div>
+		</div>
+		
+	</div>
+	
+		<footer>
+			<span class="left">Все права защищены &copy; 2015</span>
+			<span class="right">Социальные кнопки<img src="img/bing.ico"  alt="Группа в контакте" title="Группа в контакте"/></span>
+		</footer>
+
+
+
+
+</body>
+
+</html>
