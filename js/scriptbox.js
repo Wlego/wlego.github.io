@@ -201,6 +201,8 @@ function post_query( url, name, data ) {
 
 }
 
+/* изменения иконок при валидации данных формы */
+
 $('.reg').on('click',function valid_form(){
 	alert('1');
 	$('form .glyphicon-remove').remove();
